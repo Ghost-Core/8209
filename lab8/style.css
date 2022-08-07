@@ -1,0 +1,122 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 0.25fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header header header"
+      "form form form form"
+      "footer footer footer footer";
+}
+  
+.header {
+display: grid;
+grid-template-columns: 0.25fr 1fr;
+grid-template-rows: 0.75fr 0.25fr;
+gap: 3px 3px;
+grid-template-areas:
+    "logo brandName"
+    "nav nav";
+grid-area: header;
+color: white;
+font-size: 18pt;
+}
+
+.nav { 
+    grid-area: nav;
+    background-color: #133854;
+    color: white;
+    font-size: 18pt;
+    text-align: left;
+    height: 40px;
+ }
+.nav a{
+    color: aliceblue;
+    color-adjust: white;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.form {
+display: grid;
+grid-template-columns: 1fr 0.5fr 1fr 1fr;
+grid-template-rows: 0.25fr 1fr 0.25fr;
+padding-left: 30px;
+padding-right: 30px;
+gap: 0px 0px;
+grid-template-areas:
+    "formHeader formHeader formHeader formHeader"
+    "formCol1 formCol2 formCol3 formPic"
+    "formFooter formFooter formFooter formFooter";
+grid-area: form;
+  }
+  .formHeader { grid-area: formHeader; }
+  .formFooter { grid-area: formFooter; }
+  .formCol1 { grid-area: formCol1; }
+  .formCol2 { grid-area: formCol2; }
+  .formCol3 { grid-area: formCol3; }
+  .formPic { grid-area: formPic; }
+  
+.footer { 
+    grid-area: footer;
+    background-color: #133854;
+    color: white;
+    font-size: 18pt;
+    text-align: right;
+    padding: 10px; }
+
+section {
+    font-size: 20pt;
+}
+
+section img {
+    height: 200px;
+}
+
+
+address {
+    font-style: normal;
+}
+
+#brname {
+    height: 150px;
+}
+#logo {
+    height: 150px;
+}
+
+.footer img {
+    height: 30px;
+    padding-top: 10px;
+    padding-right: 10px;
+    float: left; 
+}
+p{
+    font-family: 'segoeprb';
+}
+
+.formPic #cuteCat{
+    height: 300px;
+    width: 400px;
+}
+.flex-container {
+  display: flex;
+}
+
+h1, label, legend{
+    color:#133854;
+}
+.flex-container1 {
+    display: flex;
+  }
+.flex-container1> div{
+    padding-right: 10px;
+}
+.flex-container1 label{
+    color: rgba(0, 0, 0, 0.623);
+}
+#conditional_part{
+  display:none;
+}
+#descTeritorial{
+    display:none;
+  }

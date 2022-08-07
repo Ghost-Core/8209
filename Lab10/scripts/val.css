@@ -1,0 +1,22 @@
+/*For doing this assignment I have used the sample assignment as a source. 
+  Therefore, there may be some similarity between these files but they are
+   only those that I fully understood. Thank you */
+
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+.alert{
+    color:red;
+}
+
+input[type=text], select {
+    background-color: #0f6d03;
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
